@@ -80,13 +80,12 @@ class TeamCardIzzy extends Component {
           <Card className="card-borderless" border="">
           <Card.Body>
             <Card.Title className="bm-blue-color team-card-title">Isaiah Brand</Card.Title>
-            <Card.Subtitle className="text-muted pb-3 monospace-font">CTO & Co-Founder</Card.Subtitle>
+            <Card.Subtitle className="text-muted pb-3 monospace-font">Co-Founder & Technical Advisor</Card.Subtitle>
             <p className="team-card-text">
               Izzy completed a B.S in Applied Math and Computer Science at Brown, and
               a Masters in AI at MIT. He's worked on planning & controls software and vehicle hardware
               at Microsoft Research, Skydio, and Greensight Agronomics.
             </p>
-            {/*where his research focused on vision, reinforcement learning, and motion planning.*/}
             <Card.Link href="izzy@bluemeadow.ai">izzy@bluemeadow.ai</Card.Link>
             <Card.Link href="https://www.linkedin.com/in/izzybrand/"><span className="fa fa-linkedin"></span></Card.Link>
             {/* <Card.Link href="https://github.com/IzzyBrand"><span className="fa fa-github"></span></Card.Link> */}
@@ -111,7 +110,10 @@ class TeamSection extends Component {
             <p className="section-header-text monospace-font bm-blue-color pl-3 AnimateOnScroll animate__animated animate__fadeIn">TEAM</p>
           </Row>
           <TeamCardMilo></TeamCardMilo>
-          {/* <TeamCardIzzy></TeamCardIzzy> */}
+          <Row className="pt-5">
+            <p className="section-header-text monospace-font bm-blue-color pl-3 AnimateOnScroll animate__animated animate__fadeIn">ADVISORS</p>
+          </Row>
+          <TeamCardIzzy></TeamCardIzzy>
         </Container>
       </Container>
     );
